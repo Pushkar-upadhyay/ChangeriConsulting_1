@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changeri Consulting</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+
+<body>
+    <div id="messageBox" style="display:none; color:red;"></div> <!-- Message Box for displaying messages -->
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="http://changericonsulting.com">Changeri Consulting</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto pr-4">
+                <!-- Dropdowns -->
+
+                <li class="nav-item dropdown">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="p-4" id="servicesDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <h6 class="dropdown-header">What's New</h6>
+                        <a class="dropdown-item" href="#">Register for Dbriefs webcasts</a>
+                        <a class="dropdown-item" href="#">Enterprise metaverse solutions</a>
+                        <a class="dropdown-item" href="#">Sustainability, Climate & Equity</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Tax</h6>
+                        <a class="dropdown-item" href="#">Tax Operate</a>
+                        <a class="dropdown-item" href="#">Tax Legislation</a>
+                        <a class="dropdown-item" href="#">Tax Technology Consulting</a>
+                        <a class="dropdown-item" href="#">Global Employer Services</a>
+                        <a class="dropdown-item" href="#">Legal Business Services</a>
+                        <a class="dropdown-item" href="#">Tax Services</a>
+                    </div>
+                </li>
+
+                <!-- Industries Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="industriesDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Industries
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="industriesDropdown">
+                        <h6 class="dropdown-header">Consulting</h6>
+                        <a class="dropdown-item" href="#">Core Business Operations</a>
+                        <a class="dropdown-item" href="#">Customer & Marketing</a>
+                        <a class="dropdown-item" href="#">Enterprise Technology & Performance</a>
+                        <a class="dropdown-item" href="#">Human Capital</a>
+                        <a class="dropdown-item" href="#">Strategy & Analytics</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Audit & Assurance</h6>
+                        <a class="dropdown-item" href="#">Audit Innovation</a>
+                        <a class="dropdown-item" href="#">Accounting Standards</a>
+                        <a class="dropdown-item" href="#">Accounting Events & Transactions</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Risk & Financial Advisory</h6>
+                        <a class="dropdown-item" href="#">Accounting & Internal Controls</a>
+                        <a class="dropdown-item" href="#">Cyber & Strategic Risk</a>
+                        <a class="dropdown-item" href="#">Regulatory & Legal</a>
+                        <a class="dropdown-item" href="#">Transactions and M&A</a>
+                    </div>
+                </li>
+
+                <!-- Careers Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="careersDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Careers
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="careersDropdown">
+                        <h6 class="dropdown-header">Changeri Private</h6>
+                        <a class="dropdown-item" href="#">Explore Private Markets</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Student</h6>
+                        <a class="dropdown-item" href="#">Experienced Professionals</a>
+                        <a class="dropdown-item" href="#">Job Search</a>
+                        <a class="dropdown-item" href="#">Life at Changeri</a>
+                        <a class="dropdown-item" href="#">Alumni Relations
+                        </a>
+                    </div>
+                </li>
+                <!-- Search Box -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0" onsubmit="return searchFunction(event)">
+                        <input class="form-control mr-sm-2" type="search" id="searchInput" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn my-2 my-sm-0" type="submit"></button>
+                    </form>
+                </li>
+                <!-- Contact Us -->
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" target="_blank">Contact Us</a>
+                </li>
+
+                <!-- Sign In -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign In</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Hero Section -->
+    <div class="slider">
+        <div class="list">
+          <div class="item active">
+            <img src="WebsiteBackground" alt="Slide 1">
+            <div class="content">
+              <h1>Changeri<span>Consulting</span></h1>
+              <p>Innovative Solutions for Your Business Growth</p>
+              <a href="#p-4" class="btn">View Services</a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="Tax Consulting" alt="Slide 2"> <!-- Corrected image path -->
+            <div class="content">
+              <h1>Tax<span>Consulting</span></h1>
+              <p>Expert guidance on tax compliance and strategy.</p>
+              <a href="#p-4" class="btn">View Services</a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="Adut.jpg" alt="Slide 3">
+            <div class="content">
+              <h1>Audit<span>Assurance</span></h1>
+              <p>Ensuring transparency and compliance through detailed audits.</p>
+              <a href="#p-4" class="btn">View Services</a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="DataConsulting.jpg" alt="Slide 4"> <!-- Corrected image path -->
+            <div class="content">
+              <h1>Consulting<span>Analytics</span></h1>
+              <p>Transforming data into actionable insights with AI.</p>
+              <a href="#p-4" class="btn">View Services</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="arrows">
+          <button id="prev">&#10094;</button>
+          <button id="next">&#10095;</button>
+        </div>
+      
+        <div class="thumbnail">
+          <div class="item active">
+            <img src="WebsiteBackground" alt="Thumbnail 1">
+          </div>
+          <div class="item">
+            <img src="Tax Consulting" alt="Thumbnail 2">
+          </div>
+          <div class="item">
+            <img src="Adut.jpg" alt="Thumbnail 3">
+          </div>
+          <div class="item">
+            <img src="DataConsulting.jpg" alt="Thumbnail 3">
+          </div>
+        </div>
+      </div>
+            
+    <!--About Section -->
+    <section id="change-chang" class="change-chang">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2 class="section-title">About Changeri</h2>
+                    <p class="section-description">
+                        Changeri Consulting specializes in delivering expert IT consulting services across tax, audit &
+                        assurance, and risk & financial advisory domains. Our mission is to empower businesses by
+                        providing strategic insights that enable them to overcome complex challenges, ensure regulatory
+                        compliance, and seize opportunities for growth. With a commitment to excellence, we craft
+                        tailored, innovative solutions designed to optimize operations, enhance decision-making, and
+                        drive long-term success for our clients in an ever-evolving business landscape.
+                </div>
+                <div class="video-content">
+                    <video autoplay muted loop playsinline class="change-video">
+                        <source
+                            src="Welcome Changeri Consulting Innovative Solutions for Your Business Growth - Made with Clipchamp.mp4"
+                            type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="stats-wrapper">
+                <div class="stat-card">
+                    <h3>3+</h3>
+                    <p>Years of Excellence</p>
+                </div>
+                <div class="stat-card">
+                    <h3>250+</h3>
+                    <p>Clients Served</p>
+                </div>
+                <div class="stat-card">
+                    <h3>100+</h3>
+                    <p>Projects Completed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about-section">
+        <div class="container about-content">
+            <div class="about-text">
+                <h2 class="about-title">YOUR TRUSTED ADVISORS</h2>
+                <h3 class="about-subtitle">Empowering your business success</h3>
+                <p class="about-description">
+                </p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSckWsqKY-S3yPdKLFJZskMhqh-N2pj2Wsl8QTQhkcajSVnn0w/viewform?usp=sf_link" class="btn about-btn">Get in touch</a>
+            </div>
+            <div class="about-image">
+                <img src="About.jpg" alt="Consulting Image" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="p-4">
+        <h2 style="color: green;"><b>Empowering your business</b></h2>
+        <!-- <p style="color: black; font-weight: bold;"><b>Expertise in tax, audit, Consulting & analytics</b></p> -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Tax Consulting" class="card-img-top" alt="Tax Consulting">
+                    <div class="card-body">
+                        <h5 class="card-title">Tax Consulting</h5>
+                        <p class="card-text">Expert guidance on tax compliance and strategy.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Other services cards -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Adutfooter.webp" class="card-img-top" alt="Audit & Assurance">
+                    <div class="card-body">
+                        <h5 class="card-title">Audit & Assurance</h5>
+                        <p class="card-text">Ensuring transparency and compliance through detailed audits.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="consulting.jpg" class="card-img-top" alt="AI & Analytics">
+                    <div class="card-body">
+                        <h5 class="card-title">Consulting & analytic</h5>
+                        <p class="card-text">Transforming data into actionable insights with AI.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-white text-black pt-4 mt-4">
+        <div class="container">
+            <div class="row">
+                <!-- Footer content such as location, services, industries, careers, etc. -->
+                <!-- Google Map Location -->
+                <div class="col-md-4">
+                    <h5 class="text-uppercase">Location</h5>
+                    <a href="https://maps.app.goo.gl/e6YJYLzUWNcAwiGk9"><img src="map.jpg" alt="Map"
+                            class="img-fluid" width="10%"></a> Google Map Location Here</p>
+                    <h5 class="text-uppercase">About Company</h5>
+                    <p>Changeri Consulting delivers expert IT consulting in tax, audit & assurance, and risk & financial
+                        advisory. We empower businesses with strategic insights, helping them navigate challenges,
+                        ensure compliance, and drive growth through tailored, innovative solutions.</p>
+                </div>
+                <!-- Services -->
+                <div class="col-md-2">
+                    <h5 class="text-uppercase">Services</h5>
+                    <ul class="list-unstyled">
+                        <li>Tax</li>
+                        <li>Consulting</li>
+                        <li>Audit & Assurance</li>
+                        <li>Risk & Financial Advisory</li>
+                    </ul>
+                </div>
+                <!-- Industries -->
+                <div class="col-md-2">
+                    <h5 class="text-uppercase">Industries</h5>
+                    <ul class="list-unstyled">
+                        <li>Consumer</li>
+                        <li>Energy, Resources & Industrials</li>
+                        <li>Financial Services</li>
+                        <li>Government & Public Services</li>
+                        <li>Life Sciences & Health Care</li>
+                        <li>Technology, Media & Telecommunications</li>
+                    </ul>
+                </div>
+                <!-- Careers -->
+                <div class="col-md-2">
+                    <h5 class="text-uppercase">Careers</h5>
+                    <ul class="list-unstyled">
+                        <li>Careers</li>
+                        <li>Students</li>
+                        <li>Experienced Professionals</li>
+                        <li>Job Search</li>
+                        <li>Life at Changeri</li>
+                        <li>Alumni Relations</li>
+                    </ul>
+                </div>
+                <!-- Social Media -->
+                <div class="col-md-2">
+                    <h5 class="text-uppercase">Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#"><img src="x1.jpg" alt="Twitter" class="img-fluid"></a>
+                        <a href="#"><img src="Instagram.jpg" alt="Instagram" class="img-fluid"></a>
+                        <a href="#"><img src="facebook.avif" alt="Facebook" class="img-fluid"></a>
+                        <a href="#"><img src="youtube.jpg" alt="YouTube" class="img-fluid"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-white text-black pt-4 mt-4">
+            <div class="container text-center">
+                <p>&copy; 2024 Changeri Consulting. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="script.js"></script> <!-- Link to external JS -->
+        
+</body>
+</html>
